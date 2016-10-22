@@ -13,6 +13,7 @@
 \hypersetup{
  pdfstartview={XYZ null null 1}}
 \usepackage{breakurl}
+
 \begin{document}
 <<setup, include=FALSE, cache=FALSE>>=
 library(knitr)
@@ -23,7 +24,7 @@ options(formatR.arrow=TRUE,width=90)
 
 \title{A Minimal Demo of knitr}
 
-\author{Yihui Xie}
+\author{Yihui Xie, modified by NicoBloc}
 
 \maketitle
 You can test if \textbf{knitr} works with this minimal demo. OK, let's
