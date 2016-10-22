@@ -42,7 +42,7 @@ and histograms recorded by the PDF device:
 <<boring-plots, fig.width=4, fig.height=4, out.width='.4\\linewidth'>>=
 ## two plots side by side (option fig.show='hold')
 par(mar=c(4, 4, 1, .1),cex.lab=.95,cex.axis=.9,mgp=c(2,.7,0),tcl=-.3,las=1)
-boxplot(x)
+boxplot(x, main='Boring boxplot')
 hist(x, main='Boring histogram')
 @
 
