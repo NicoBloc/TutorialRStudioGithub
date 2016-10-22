@@ -49,6 +49,7 @@ Cool plot (Brownian motion):
 
 <<cool-plots, fig.width=6, fig.height=4, out.width='.4\\linewidth'>>=
 plot(cumsum(x), type='l')
+silent <- lapply(2:3, function(i) lines(cumsum(sample(x)), col=i))
 @
 
 Do the above chunks work? You should be able to compile the \TeX{}
