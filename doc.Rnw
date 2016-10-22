@@ -31,8 +31,8 @@ get started with some boring random numbers:
 
 <<boring-random>>=
 set.seed(1121)
-(x=rnorm(20))
-mean(x);var(x)
+head(x <- rnorm(1000))
+mean(x); var(x)
 @
 
 The first element of \texttt{x} is \Sexpr{x[1]}. Boring boxplots
@@ -43,6 +43,12 @@ and histograms recorded by the PDF device:
 par(mar=c(4,4,.1,.1),cex.lab=.95,cex.axis=.9,mgp=c(2,.7,0),tcl=-.3,las=1)
 boxplot(x)
 hist(x,main='')
+@
+
+Cool plot (Brownian motion):
+
+<<cool-plots, fig.width=6, fig.height=4, out.width='.4\\linewidth'>>=
+plot(cumsum(x), type='l')
 @
 
 Do the above chunks work? You should be able to compile the \TeX{}
